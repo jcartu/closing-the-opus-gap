@@ -1,6 +1,26 @@
-# We Spent 3,500 API Calls Finding Out What Actually Matters for AI Tool-Calling (Most of What You Think Matters Doesn't)
+<div align="center">
+
+# Closing the Opus Gap
+
+### Systematic Optimization of Tool-Calling in Open-Weight LLMs on Wafer-Scale Hardware
 
 *Josh Cartu · RASPUTIN AI Research Lab · March 2026*
+
+[![Calls](https://img.shields.io/badge/API_calls-3,500%2B-blueviolet?style=for-the-badge)](#the-setup)
+[![Phases](https://img.shields.io/badge/phases-10-blue?style=for-the-badge)](#the-setup)
+[![Models](https://img.shields.io/badge/models-Qwen3_235B_·_GLM--4.7-orange?style=for-the-badge)](#the-setup)
+[![Hardware](https://img.shields.io/badge/hardware-Cerebras_wafer--scale-red?style=for-the-badge)](#the-setup)
+[![Cost ratio](https://img.shields.io/badge/cost_gap_closed-150×-green?style=for-the-badge)](#the-setup)
+
+[Setup](#the-setup) · [Findings](#finding-1-your-production-system-prompt-is-making-things-worse) · [Hub](https://github.com/jcartu/qwen-bench)
+
+</div>
+
+---
+
+## TL;DR
+
+We ran the most comprehensive public study of tool-calling optimization to date and found that **most accepted best practices don't matter** — prompt size and *what you ask for*, not how you describe each tool, dominate accuracy. Our minimal 128-token system prompt beats a 4,675-token production prompt by 20+ pp.
 
 ---
 
